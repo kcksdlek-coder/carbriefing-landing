@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>카브리핑 견적 문의</title>
+<meta name="description" content="신차 장기렌트·리스 견적, 15초 브리핑. 견적서 요청은 여기서.">
+<link rel="icon" href="https://d2ol7oe51mr4n9.cloudfront.net/user_37sv4wIlv1g82cgdbb2IDoqfIKQ/6b864645-dabc-4f17-bd41-c178cbd88973.png">
+<meta property="og:title" content="카브리핑 — 신차 장기렌트·리스 견적 문의">
+<meta property="og:description" content="매일 한 대, 15초 견적 브리핑. 견적서 요청은 30초면 끝.">
+<meta property="og:image" content="https://d2ol7oe51mr4n9.cloudfront.net/user_37sv4wIlv1g82cgdbb2IDoqfIKQ/40aa48ea-3133-4150-8343-7e4b2744c2f9.png">
+<style>
+  :root{--bg:#141414;--card:#1e1e1e;--line:#2c2c2c;--lime:#A0F050;--txt:#f3f3f3;--mut:#9a9a9a}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"Apple SD Gothic Neo","Pretendard","Noto Sans KR",sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:480px;margin:0 auto;padding:0 20px 60px}
+  header{display:flex;align-items:center;justify-content:center;padding:18px 0 6px}
+  header img{height:34px}
+  .hero{display:grid;grid-template-columns:1fr 150px;gap:12px;align-items:end;margin-top:8px}
+  .hero h1{font-size:26px;line-height:1.25;font-weight:800;letter-spacing:-.5px}
+  .hero h1 b{color:var(--lime)}
+  .hero p{color:var(--mut);font-size:14px;margin-top:10px}
+  .hero .pic{position:relative;height:210px;overflow:hidden;border-radius:16px 16px 0 0;background:linear-gradient(180deg,#232323,#141414)}
+  .hero .pic img{position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);width:170px}
+  .pill{display:inline-block;background:#223314;color:var(--lime);font-size:12px;font-weight:700;padding:5px 10px;border-radius:99px;margin-bottom:10px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 18px;margin-top:18px}
+  .card h2{font-size:18px;font-weight:800;margin-bottom:4px}
+  .card .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  label{display:block;font-size:13px;color:var(--mut);margin:12px 0 6px}
+  label b{color:var(--lime)}
+  input,textarea{width:100%;background:#111;border:1px solid var(--line);border-radius:12px;color:var(--txt);font-size:16px;padding:13px 14px;outline:none}
+  input:focus,textarea:focus{border-color:var(--lime)}
+  textarea{min-height:84px;resize:vertical}
+  .seg{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+  .seg input{display:none}
+  .seg span{display:block;text-align:center;border:1px solid var(--line);border-radius:12px;padding:12px 0;font-size:14px;cursor:pointer;background:#111}
+  .seg input:checked+span{border-color:var(--lime);color:var(--lime);background:#1b2611;font-weight:700}
+  .agree{display:flex;gap:10px;align-items:flex-start;margin-top:16px;font-size:13px;color:var(--mut)}
+  .agree input{width:18px;height:18px;margin-top:1px;accent-color:var(--lime)}
+  .agree a{color:var(--txt);text-decoration:underline}
+  button.cta{width:100%;margin-top:16px;background:var(--lime);color:#111;border:0;border-radius:14px;font-size:17px;font-weight:800;padding:16px;cursor:pointer}
+  button.cta:disabled{opacity:.5}
+  .msg{margin-top:12px;font-size:14px;text-align:center;min-height:20px}
+  .msg.ok{color:var(--lime)} .msg.err{color:#ff7b7b}
+  .trust{margin-top:22px;color:var(--mut);font-size:13px;text-align:center;line-height:1.7}
+  .alt{display:flex;gap:10px;margin-top:14px}
+  .alt a{flex:1;text-align:center;border:1px solid var(--line);border-radius:12px;padding:12px;color:var(--txt);text-decoration:none;font-size:14px;font-weight:700}
+  .foot{margin-top:28px;font-size:11px;color:#666;text-align:center;line-height:1.7}
+  dialog{background:var(--card);color:var(--txt);border:1px solid var(--line);border-radius:16px;max-width:440px;width:calc(100% - 40px);padding:20px;font-size:13px;line-height:1.7}
+  dialog::backdrop{background:rgba(0,0,0,.7)}
+  dialog h3{font-size:15px;margin-bottom:8px}
+  dialog button{margin-top:12px;width:100%;background:#2c2c2c;color:#fff;border:0;border-radius:10px;padding:12px;font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_37sv4wIlv1g82cgdbb2IDoqfIKQ/40aa48ea-3133-4150-8343-7e4b2744c2f9.png" alt="카브리핑"></header>
+
+  <section class="hero">
+    <div>
+      <span class="pill">매일 한 대 · 15초 견적 브리핑</span>
+      <h1>신차 <b>장기렌트 · 리스</b><br>견적서, 30초면 받아요</h1>
+      <p>선납금 · 보증금 · 무보증 월납을<br>한 번에 비교해서 보내드립니다.</p>
+    </div>
+    <div class="pic"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_37sv4wIlv1g82cgdbb2IDoqfIKQ/76ec3097-ae90-4a43-8999-be468baf0a95.jpg" alt="견적 담당 민서"></div>
+  </section>
+
+  <form class="card" id="f" novalidate>
+    <h2>견적 문의</h2>
+    <div class="sub">연락처만 남기셔도 됩니다. 영업시간 내 순서대로 연락드려요.</div>
+
+    <label>연락처 <b>*</b></label>
+    <input name="phone" type="tel" inputmode="tel" placeholder="010-0000-0000" required autocomplete="tel">
+
+    <label>관심 차종</label>
+    <input name="car" type="text" placeholder="예) 벤츠 E클래스, 기아 K5" autocomplete="off">
+
+    <label>구매 방법</label>
+    <div class="seg">
+      <label><input type="radio" name="type" value="장기렌트"><span>장기렌트</span></label>
+      <label><input type="radio" name="type" value="리스"><span>리스</span></label>
+      <label><input type="radio" name="type" value="모름" checked><span>잘 모르겠어요</span></label>
+    </div>
+
+    <label>문의 내용</label>
+    <textarea name="memo" placeholder="원하는 트림, 계약 기간, 궁금한 점을 적어주세요 (선택)"></textarea>
+
+    <div class="agree">
+      <input type="checkbox" id="agree" required>
+      <div>개인정보 수집·이용에 동의합니다. <a href="#" id="showPolicy">내용 보기</a></div>
+    </div>
+
+    <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+    <button class="cta" type="submit" id="btn">견적서 요청하기</button>
+    <div class="msg" id="msg"></div>
+  </form>
+
+  <div class="alt">
+    <a href="KAKAO_LINK" id="kakao">💬 카카오톡으로 문의</a>
+    <a href="tel:PHONE_NUMBER" id="tel">📞 전화 문의</a>
+  </div>
+
+  <p class="trust">영상 속 견적은 해당 월 기준이며, 계약 조건(기간·주행거리·잔가·신용도)에 따라 달라질 수 있습니다.<br>견적 담당 <b>민서</b>는 AI로 제작된 가상 인물이며, 상담은 담당자가 직접 진행합니다.</p>
+
+  <p class="foot">카브리핑 · 문의 carbriefing@example.com<br>© 2026 CarBriefing</p>
+</div>
+
+<dialog id="policy">
+  <h3>개인정보 수집·이용 안내</h3>
+  <p><b>수집 항목</b> 연락처, 관심 차종, 문의 내용<br>
+  <b>수집 목적</b> 신차 장기렌트·리스 견적 안내 및 상담<br>
+  <b>보유 기간</b> 상담 종료 후 6개월 이내 파기 (관계 법령에 따라 보관이 필요한 경우 그 기간)<br>
+  <b>제3자 제공</b> 견적 산출을 위해 제휴 렌트·리스사에 연락처와 관심 차종을 제공할 수 있습니다.<br>
+  동의를 거부할 수 있으며, 거부 시 견적 안내가 제한됩니다.</p>
+  <button type="button" id="closePolicy">닫기</button>
+</dialog>
+
+<script>
+  // 제출 → Apps Script 웹앱 (09_랜딩페이지.md 의 배포 URL 로 교체)
+  var ENDPOINT = "APPS_SCRIPT_URL";
+  var f = document.getElementById("f"), btn = document.getElementById("btn"), msg = document.getElementById("msg");
+  var dlg = document.getElementById("policy");
+  document.getElementById("showPolicy").onclick = function(e){ e.preventDefault(); dlg.showModal(); };
+  document.getElementById("closePolicy").onclick = function(){ dlg.close(); };
+
+  f.addEventListener("submit", function(e){
+    e.preventDefault();
+    var phone = f.phone.value.replace(/[^0-9]/g, "");
+    if (phone.length < 10 || phone.length > 11) { return show("연락처를 확인해주세요 (숫자 10~11자리)", true); }
+    if (!document.getElementById("agree").checked) { return show("개인정보 수집·이용에 동의해주세요", true); }
+    if (f.website.value) { return; } // 봇 차단용 숨은 칸
+    var data = { phone: phone, car: f.car.value.trim(), type: (f.querySelector("input[name=type]:checked")||{}).value || "",
+                 memo: f.memo.value.trim(), src: location.search.slice(1), ua: navigator.userAgent.slice(0, 80) };
+    btn.disabled = true; show("보내는 중…");
+    fetch(ENDPOINT, { method: "POST", body: JSON.stringify(data) })  // text/plain 으로 보내야 Apps Script CORS 가 통과한다
+      .then(function(r){ return r.json(); })
+      .then(function(j){
+        if (!j.ok) throw new Error(j.error || "서버 오류");
+        f.reset(); show("접수됐어요! 영업시간 내 연락드릴게요 🙂");
+      })
+      .catch(function(err){ show("전송에 실패했어요. 아래 카카오톡으로 문의해주세요. (" + err.message + ")", true); btn.disabled = false; });
+  });
+  function show(t, err){ msg.textContent = t; msg.className = "msg " + (err ? "err" : "ok"); if (!err && t.indexOf("접수") === 0) btn.disabled = false; }
+</script>
+</body>
+</html>
